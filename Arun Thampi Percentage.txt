@@ -1,0 +1,69 @@
+Level One Task
+Name:Arun Thampi
+Batch :FSD March 2020, ICTAK Koratty
+
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card Generator</title>
+    <link rel="stylesheet" href="/styleSolutions.css">
+
+</head>
+<body>
+    <div>
+        <!--You dont have to provide style in this div-->
+        <form>
+            <label for="Name">Enter Student Name</label><br>
+            <input type="text" id = "name"><br>
+            <label for="Class">Enter Class</label><br>
+            <input type="text" id="class"><br>
+            <label for="Roll No">Enter roll number</label><br>
+            <input type="text"  id="rollNo"><br>
+            <label for="Mark1">Mark obtained in subject-1</label><br>
+            <input type="number"  id="mark1">/100<br>
+            <label for="Mark2">Mark obtained in subject-2</label><br>
+            <input type="number"  id="mark2">/100<br>
+            <label for="Mark3">Mark obtained in subject-3</label><br>
+            <input type="number"  id="mark3">/100<br>
+            <p>Click the button below to create Percentage Card</p>
+       <button type="button" onclick= "getReport()">Generate Card</button>
+          </form>
+          <!--Use the data from above input fileds to generate a card -->
+    </div>
+
+<div>
+<!--Write your codes from here-->
+<!--Printing Name and Percentage-->
+<h1 id="studname"></h1>
+<h1 id="getavg"> </h1>
+</div>
+<script src="script.js"></script>
+      </body> 
+
+</html>
+
+
+Script
+
+// You can add your codes here 
+function getReport()
+    {
+
+      var name = document.getElementById('name').value;
+      var m1 = document.getElementById('mark1').value;
+      var m2 = document.getElementById('mark2').value;
+      var m3 = document.getElementById('mark3').value;
+
+      var totalmarks = parseInt(m1) + parseInt(m2) + parseInt(m3) ;
+
+       //calculation of percentage
+       var percentage = (totalmarks/3) ;
+      //printing the name and percentage
+       document.getElementById("studname").innerHTML = name+" has scored";
+     
+       document.getElementById("getavg").innerHTML = percentage +"% in the examination";
+       
+    }

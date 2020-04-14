@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <title>Progress Card Generator</title>
+    <link rel="stylesheet" href="styleSolutions.css">
+
+</head>
+<body>
+    
+    <div>
+        <h1 style="text-align: center;">Progress Report Generator</h1>
+        <!--You dont have to provide style in this div-->
+        <form class="main">
+            
+            <label for="Name">Enter Student Name</label><br>
+            <input type="text" id = "name"><br><br>
+            <label for="Class">Enter Class</label><br>
+            <input type="text" id="clas"><br><br>
+            <label for="Roll No">Enter roll number</label><br>
+            <input type="text"  id="rollNo"><br><br>
+            <label for="Mark1">Mark obtained in subject-1</label><br>
+            <input type="number"  id="mark1">/100<br><br>
+            <label for="Mark2">Mark obtained in subject-2</label><br>
+            <input type="number"  id="mark2">/100<br><br>
+            <label for="Mark3">Mark obtained in subject-3</label><br>
+            <input type="number" id="mark3">/100<br><br>
+            <p>Click the button below to create Percentage Card</p>
+       <button type="button" onclick= "getReport()">Generate Card</button>
+          </form>
+          <!--Use the data from above input fileds to generate a card -->
+    </div>
+
+<div class="result">
+<!--Write your codes from here-->
+<!--Printing Name and Percentage-->
+<h1 id="prog"></h1>
+<h2 id="studname"></h2>
+<h1 id="getavg"> </h1>
+</div>
+<script src="script.js"></script>
+      </body> 
+
+</html>
