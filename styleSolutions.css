@@ -2,9 +2,10 @@
 .main
 {
     text-align: center;
+    
     border: 5px solid rgb(80, 80, 134);
     background-color: rgb(187, 202, 202);
-    
+
     padding: 10px;
     font-weight: 500;
     
